@@ -1,5 +1,5 @@
 # Landing Page / SendInBlue Email Subscription
-Simple landing page that includes form-submission to
+Landing page that includes form-submission to
 allow visitors to subscribe to a SendInBlue mailing list
 for the purpose of pre-launch lead-generation.
 
