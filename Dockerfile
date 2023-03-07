@@ -14,4 +14,4 @@ RUN npm install
 EXPOSE 8080
 
 # Start the server
-ENTRYPOINT [ "npm start" ]
+CMD ["npm", "start"]
