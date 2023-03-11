@@ -75,15 +75,15 @@ Note that your API Key should **ALWAYS** be kept private.
 
 ## 1. Set Environment Variables on the Host Terminal (local/temporary)
 - Windows CMD:
-  - `set PORT=<my_port>` (defaults to port 8080 if none is set)
+  - `set LEAD_GEN_PAGE_PORT=<my_port>` (defaults to port 8080 if none is set)
   - `set SENDINBLUE_API_KEY=<my_key>`
   - `set SENDINBLUE_LIST_ID=<my_id>`
 - MacOS:
-  - `export PORT=<my_port>` (defaults to port 8080 if none is set)
+  - `export LEAD_GEN_PAGE_PORT=<my_port>` (defaults to port 8080 if none is set)
   - `export SENDINBLUE_API_KEY=<my_key>`
   - `export SENDINBLUE_LIST_ID=<my_id>`
 - Linux:
-  - `PORT=<my_port>` (defaults to port 8080 if none is set)
+  - `LEAD_GEN_PAGE_PORT=<my_port>` (defaults to port 8080 if none is set)
   - `SENDINBLUE_API_KEY=<my_key>`
   - `SENDINBLUE_LIST_ID=<my_id>`
 
