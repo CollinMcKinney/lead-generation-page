@@ -4,11 +4,13 @@ allow visitors to subscribe to a SendInBlue mailing list
 for the purpose of pre-launch lead-generation.
 
 ## Features:
-- SendInBlue Contact List Subscription
-- Docker
-- NodeJS
-- Open Graph Protocol meta tags / placeholder image.
-- Favicon & Banner placeholder images.
+- Easily Customizeable
+- SendInBlue Contact List Subscription (What good is a landing page if you aren't generating leads?)
+- Open Graph Protocol meta tags (For social media link-sharing previews.)
+- Favicons (Browser/tab icons.)
+- Banner (Central page image.)
+- Docker (Includes a Dockerfile for ease of deployment on serverless architecture.)
+- Node (Uses the NPM package-manager & NodeJS runtime-environment.)
 
 # Modifying
 
