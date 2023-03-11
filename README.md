@@ -1,4 +1,4 @@
-# Landing Page / SendInBlue Email Subscription
+# Lead Generation Page / SendInBlue Email Subscription / Landing Page
 Landing page that includes form-submission to
 allow visitors to subscribe to a SendInBlue mailing list
 for the purpose of pre-launch lead-generation.
@@ -10,7 +10,28 @@ for the purpose of pre-launch lead-generation.
 - Open Graph Protocol meta tags / placeholder image.
 - Favicon & Banner placeholder images.
 
-# Building
+# Modifying
+
+## 1. Replace Image Files
+- Replace the files in  `./public/img/` with your own images
+  - Name them the same, these are the names most browsers expect.
+  - Use the same image format & resolution.
+
+## 2. Modify Colors / Theme
+- Edit the colors in `./public/css/index.css`
+  - `--color-bg` is used for the background color.
+  - `--color-fg` is used for the text color.
+  - `--color-theme` is used for the meta theme color (address bar color on mobile devices.)
+  - `--color-accent` is currently unused.
+
+## 3. Personalize Text
+- Edit the text tags in `./public/html/index.html`
+  - Replace "Landing Page" in `<title>Landing Page</title>`
+  - Replace "Coming Soon!" in `<h1>Coming Soon!</h1>`
+  - Replace "Join our mailing List?" in `<h2>Join our mailing List?</h2>`
+  - Replace "Subscribe" in `<button type="submit">Subscribe</button>`
+
+# Building (Docker)
 
 ## 1. Install Docker:
 
@@ -56,3 +77,22 @@ docker ps
 ```bash
 docker stop <CONTAINER ID>
 ```
+
+# Building (NPM)
+
+## 1. Set Environment Variables on the Host Terminal (local/temporary)
+- Windows CMD:
+  - `set SENDINBLUE_API_KEY=<my_key>`
+  - `set SENDINBLUE_LIST_ID=<my_id>`
+- MacOS:
+  - export SENDINBLUE_API_KEY=<my_key>
+  - export SENDINBLUE_LIST_ID=<my_id>
+- Linux:
+  - SENDINBLUE_API_KEY=<my_key>
+  - SENDINBLUE_LIST_ID=<my_id>
+
+## 2. Install Build Dependencies:
+- `npm install`
+
+## 3. Run the Node.JS Server
+- `npm start`
