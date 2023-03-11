@@ -6,7 +6,7 @@ Customizeable landing page that enables visitors to subscribe to a SendInBlue ma
 <div align="center"><img src="https://github.com/CollinMcKinney/lead-generation-page/raw/gh-pages/demo.png"></div>
 
 ## Features
-- **Easily Customizeable** - *easily configurable to use your own images, logos, text, colors/themes, api-keys, ports, etc.*
+- **Easily Customizeable** - *easily configured to use your own images, logos, text, colors/themes, api-keys, ports, etc.*
 - **SendInBlue Contact List Subscription** - *what good is a landing page if you aren't generating leads?*
 - **Open Graph Protocol Meta Tags** - *for social media link-sharing previews.*
 - **Favicons/Browser Icons** - *icons that show in the browser tab and on mobile devices.*
