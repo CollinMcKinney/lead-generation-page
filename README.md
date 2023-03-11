@@ -1,5 +1,7 @@
-# Lead Generation Page / SendInBlue Email Subscription / Landing Page
+<h1 align="center">Lead Generation Page</h1>
+<p align="center">
 Landing page that includes form-submission to allow visitors to subscribe to a SendInBlue mailing list for the purpose of pre-launch lead-generation.
+</p>
 
 ## Features
 - **Easily Customizeable** - *easily configurable to use your own images, logos, text, colors/themes, api-keys, ports, etc.*
@@ -9,6 +11,8 @@ Landing page that includes form-submission to allow visitors to subscribe to a S
 - **Banner/Logo** - *central page imagery.*
 - **Docker** - *includes a Dockerfile for ease of deployment on serverless architecture.*
 - **NodeJS** - *uses the NodeJS runtime-environment and NPM package-manager.*
+
+
 
 ## Requirements
 - [SendInBlue](https://www.sendinblue.com/)
