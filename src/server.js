@@ -6,7 +6,7 @@ import path from 'path';
 
 const app = express();
 const HOST_NAME = '0.0.0.0';
-const PORT = process.env.PORT || 8080;
+const LEAD_GEN_PAGE_PORT = process.env.LEAD_GEN_PAGE_PORT || 8080;
 const SENDINBLUE_API_KEY = process.env.SENDINBLUE_API_KEY;
 const SENDINBLUE_LIST_ID = parseInt(process.env.SENDINBLUE_LIST_ID);
 
@@ -58,6 +58,6 @@ app.get('*', (req, res) => {
 });
 
 // Start the server
-app.listen(PORT, HOST_NAME, () => {
-  console.log(`Server listening on: http://${HOST_NAME}:${PORT}`);
+app.listen(LEAD_GEN_PAGE_PORT, HOST_NAME, () => {
+  console.log(`Server listening on: http://${HOST_NAME}:${LEAD_GEN_PAGE_PORT} (external port may differ if served from a Docker container.)`);
 });
