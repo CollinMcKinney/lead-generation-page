@@ -55,6 +55,6 @@ jobs:
         uses: actions/deploy-pages@v1
         with:
           # Deploy both public/pages and public directories
-          paths: |
+          publish_dir: |
             ./public/pages
             ./public
