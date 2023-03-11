@@ -41,10 +41,14 @@ for the purpose of pre-launch lead-generation.
 
 ## 2. Build the Docker image:
 - Replace `my-landing-page` with the name you wish to use for the Docker image.
-`docker build -t my-landing-page .`
+```bash
+docker build -t my-landing-page .
+```
 
 - Check that your image was successfully created.
-`docker images`
+```bash
+docker images
+```
 
 ## 3. Run the Docker image:
 - Replace `my_key` and `my_id` with the SendInBlue API Key and the
@@ -55,7 +59,9 @@ Note that your API Key should **ALWAYS** be kept private.
   - You can replace `8181` with the port you wish to use.
 
 - Replace `my-landing-page` with the name you used in `Step 2` when building the Docker image.
-`docker run -p 8181:8080 -e SENDINBLUE_API_KEY=my_key -e SENDINBLUE_LIST_ID=my_id my-landing-page`
+```bash
+docker run -p 8181:8080 -e SENDINBLUE_API_KEY=my_key -e SENDINBLUE_LIST_ID=my_id my-landing-page
+```
 
 - Your Docker container should now be serving the landing page at http://0.0.0.0:8181 (if you used 8181 for the external port.)
   - If you get an error like `Error starting userland proxy: listen tcp4 0.0.0.0:8181: bind: address already in use.`
@@ -63,32 +69,58 @@ Note that your API Key should **ALWAYS** be kept private.
 
 ## 4. Stop the Docker container:
 - The following lists all running containers.
-`docker ps`
+```bash
+docker ps
+```
 
 - You will see a table with an entry containing `my-landing-page` (or whatever name you chose in `Step 2`)
 - Copy the `CONTAINER ID` property for this entry.
 - Run the following command and substitute the `CONTAINER ID`.
-`docker stop <CONTAINER ID>`
+```bash
+docker stop <CONTAINER ID>
+```
 
 
 # Building (NPM)
 
 ## 1. Set Environment Variables on the Host Terminal (local/temporary)
-- Windows CMD:
-  - `set LEAD_GEN_PAGE_PORT=<my_port>` (defaults to port 8080 if none is set)
-  - `set SENDINBLUE_API_KEY=<my_key>`
-  - `set SENDINBLUE_LIST_ID=<my_id>`
-- MacOS:
-  - `export LEAD_GEN_PAGE_PORT=<my_port>` (defaults to port 8080 if none is set)
-  - `export SENDINBLUE_API_KEY=<my_key>`
-  - `export SENDINBLUE_LIST_ID=<my_id>`
-- Linux:
-  - `LEAD_GEN_PAGE_PORT=<my_port>` (defaults to port 8080 if none is set)
-  - `SENDINBLUE_API_KEY=<my_key>`
-  - `SENDINBLUE_LIST_ID=<my_id>`
+- **Windows CMD:**
+```bash
+set LEAD_GEN_PAGE_PORT=<my_port>  # (defaults to port 8080 if none is set.)
+```
+```bash
+set SENDINBLUE_API_KEY=<my_key>
+```
+```bash
+set SENDINBLUE_LIST_ID=<my_id>
+```
+- **MacOS Terminal:**
+```bash
+export LEAD_GEN_PAGE_PORT=<my_port> # (defaults to port 8080 if none is set.)
+```
+```bash
+export SENDINBLUE_API_KEY=<my_key>
+```
+```bash
+export SENDINBLUE_LIST_ID=<my_id>
+```
+- **Linux Shell:**
+```bash
+LEAD_GEN_PAGE_PORT=<my_port>  # (defaults to port 8080 if none is set.)
+```
+```bash
+SENDINBLUE_API_KEY=<my_key>
+```
+```bash
+SENDINBLUE_LIST_ID=<my_id>
+```
 
 ## 2. Install Build Dependencies:
-- `npm install`
+```bash
+npm install
+```
 
 ## 3. Run the Node.JS Server
-- `npm start`
+```bash
+npm start
+```
