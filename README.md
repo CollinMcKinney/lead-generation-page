@@ -3,7 +3,7 @@
 Landing page that includes form-submission to allow visitors to subscribe to a SendInBlue mailing list for the purpose of pre-launch lead-generation.
 </p>
 
-![Demo](https://github.com/CollinMcKinney/lead-generation-page/raw/gh-pages/demo.png)
+<div align="center"><img src="https://github.com/CollinMcKinney/lead-generation-page/raw/gh-pages/demo.png"></div>
 
 ## Features
 - **Easily Customizeable** - *easily configurable to use your own images, logos, text, colors/themes, api-keys, ports, etc.*
