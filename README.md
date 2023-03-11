@@ -51,14 +51,15 @@ for the purpose of pre-launch lead-generation.
 SendInBlue Contact List ID you wish to use.
 Note that your API Key should **ALWAYS** be kept private.
 
-- `Port 8080` is used internally, the below example maps `Port 80`
-from the host to `Port 8080` in the container.
-You can replace `80` with the port you wish to use.
+- `Port 8080` is used internally, the below example maps `Port 8181` from the host to `Port 8080` in the container.
+  - You can replace `8181` with the port you wish to use.
 
 - Replace `my-landing-page` with the name you used in `Step 2` when building the Docker image.
-`docker run -p 80:8080 -e SENDINBLUE_API_KEY=my_key -e SENDINBLUE_LIST_ID=my_id my-landing-page`
+`docker run -p 8181:8080 -e SENDINBLUE_API_KEY=my_key -e SENDINBLUE_LIST_ID=my_id my-landing-page`
 
-- Your Docker container should now be serving the landing page at http://0.0.0.0:80.
+- Your Docker container should now be serving the landing page at http://0.0.0.0:8181 (if you used 8181 for the external port.)
+  - If you get an error like `Error starting userland proxy: listen tcp4 0.0.0.0:8181: bind: address already in use.`
+    - Try using a port other than `8181`.
 
 ## 4. Stop the Docker container:
 - The following lists all running containers.
