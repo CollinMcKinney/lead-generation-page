@@ -83,7 +83,10 @@ docker stop <CONTAINER ID>
 
 # Building (NPM)
 
-## 1. Set Environment Variables on the Host Terminal (local/temporary)
+## 1. Install NodeJS & NPM (NPM comes with NodeJS)
+[Get NodeJS](https://nodejs.org/en/) and follow the installation instructions.
+
+## 2. Set Environment Variables on the Host Terminal (local/temporary)
 - **Windows CMD:**
 ```bash
 set LEAD_GEN_PAGE_PORT=<my_port>  # (defaults to port 8080 if none is set.)
@@ -115,12 +118,15 @@ SENDINBLUE_API_KEY=<my_key>
 SENDINBLUE_LIST_ID=<my_id>
 ```
 
-## 2. Install Build Dependencies:
+## 3. Install Build Dependencies:
 ```bash
 npm install
 ```
 
-## 3. Run the Node.JS Server
+## 4. Run the Node.JS Server
 ```bash
 npm start
 ```
+
+## 5. Stop the Node.JS Server
+- Press the `^C` keyboard-shortcut inside the terminal where the NodeJS server is running.
