@@ -1,6 +1,6 @@
 <h1 align="center">Lead Generation Page</h1>
 <p align="center">
-Landing page that includes form-submission to allow visitors to subscribe to a SendInBlue mailing list for the purpose of pre-launch lead-generation.
+Customizeable landing page that enables visitors to subscribe to a SendInBlue mailing list for the purpose of pre-launch lead-generation.
 </p>
 
 <div align="center"><img src="https://github.com/CollinMcKinney/lead-generation-page/raw/gh-pages/demo.png"></div>
