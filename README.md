@@ -11,7 +11,7 @@ Customizeable landing page that enables visitors to subscribe to a SendInBlue ma
 - **Open Graph Protocol Meta Tags** - *for social media link-sharing previews.*
 - **Favicons/Browser Icons** - *icons that show in the browser tab and on mobile devices.*
 - **Banner/Logo** - *central page imagery.*
-- **Docker** - *includes a Dockerfile for ease of deployment on serverless architecture.*
+- **Docker** - *includes a Dockerfile for ease of deployment on serverless / cloud architecture.*
 - **NodeJS** - *uses the NodeJS runtime-environment and NPM package-manager.*
 
 
