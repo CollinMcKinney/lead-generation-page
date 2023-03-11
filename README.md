@@ -12,7 +12,7 @@ Customizeable landing page that enables visitors to subscribe to a SendInBlue ma
 - **Favicons/Browser Icons** - *icons that show in the browser tab and on mobile devices.*
 - **Banner/Logo** - *central page imagery.*
 - **Docker** - *includes a Dockerfile for ease of deployment on serverless / cloud architecture.*
-- **NodeJS** - *uses the NodeJS runtime-environment and NPM package-manager.*
+- **NodeJS** - *uses the NodeJS runtime-environment and NPM package-manager for building.*
 
 
 
