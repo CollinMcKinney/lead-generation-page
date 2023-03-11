@@ -39,15 +39,10 @@ for the purpose of pre-launch lead-generation.
 
 ## 2. Build the Docker image:
 - Replace `my-landing-page` with the name you wish to use for the Docker image.
-
-```bash
-docker build -t my-landing-page .
-```
+`docker build -t my-landing-page .`
 
 - Check that your image was successfully created.
-```bash
-docker images
-```
+`docker images`
 
 ## 3. Run the Docker image:
 - Replace `my_key` and `my_id` with the SendInBlue API Key and the
@@ -59,24 +54,19 @@ from the host to `Port 8080` in the container.
 You can replace `80` with the port you wish to use.
 
 - Replace `my-landing-page` with the name you used in `Step 2` when building the Docker image.
+`docker run -p 80:8080 -e SENDINBLUE_API_KEY=my_key -e SENDINBLUE_LIST_ID=my_id my-landing-page`
 
-```bash
-docker run -p 80:8080 -e SENDINBLUE_API_KEY=my_key -e SENDINBLUE_LIST_ID=my_id my-landing-page
-```
-
-- Your Docker container should now be serving the landing page at http://localhost:80.
+- Your Docker container should now be serving the landing page at http://0.0.0.0:80.
 
 ## 4. Stop the Docker container:
 - The following lists all running containers.
-```bash
-docker ps
-```
+`docker ps`
+
 - You will see a table with an entry containing `my-landing-page` (or whatever name you chose in `Step 2`)
 - Copy the `CONTAINER ID` property for this entry.
 - Run the following command and substitute the `CONTAINER ID`.
-```bash
-docker stop <CONTAINER ID>
-```
+`docker stop <CONTAINER ID>`
+
 
 # Building (NPM)
 
@@ -85,11 +75,11 @@ docker stop <CONTAINER ID>
   - `set SENDINBLUE_API_KEY=<my_key>`
   - `set SENDINBLUE_LIST_ID=<my_id>`
 - MacOS:
-  - export SENDINBLUE_API_KEY=<my_key>
-  - export SENDINBLUE_LIST_ID=<my_id>
+  - `export SENDINBLUE_API_KEY=<my_key>`
+  - `export SENDINBLUE_LIST_ID=<my_id>`
 - Linux:
-  - SENDINBLUE_API_KEY=<my_key>
-  - SENDINBLUE_LIST_ID=<my_id>
+  - `SENDINBLUE_API_KEY=<my_key>`
+  - `SENDINBLUE_LIST_ID=<my_id>`
 
 ## 2. Install Build Dependencies:
 - `npm install`
