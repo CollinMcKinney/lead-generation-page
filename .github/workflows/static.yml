@@ -55,4 +55,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           # Deploy both public/pages and public directories
-          publish_dir: ./public
+          folder: ./public
