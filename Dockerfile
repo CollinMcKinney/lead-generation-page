@@ -1,8 +1,11 @@
-# Use an official Node.js runtime as a parent image
-FROM node:18.14.2
+# Use an official Alpine Linux runtime as a parent image
+FROM alpine:latest
 
 # Set the working directory to /app
 WORKDIR /app
+
+# Install Node.js and npm
+RUN apk add --no-cache nodejs npm
 
 # Copy the current directory contents into the container at /app
 COPY . /app
